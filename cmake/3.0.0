@@ -1,0 +1,8 @@
+#%Module 1.0
+
+if {[is-loaded cmake] && [module-info mode load]} {
+    module unload cmake
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/cmake/3.0.0/bin
+

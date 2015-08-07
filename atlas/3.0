@@ -1,0 +1,11 @@
+#%Module 1.0
+
+if {[is-loaded atlas] && [module-info mode load]} {
+    module unload atlas
+}
+
+prepend-path 	LD_LIBRARY_PATH /usr/lib/atlas-base/
+prepend-path 	LIBRARY_PATH    /usr/lib/atlas-base/
+prepend-path 	CPATH           /usr/include/atlas
+prepend-path 	INCLUDE         /usr/include/atlas
+

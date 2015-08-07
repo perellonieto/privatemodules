@@ -1,0 +1,8 @@
+#%Module 1.0
+
+if {[is-loaded tiff] && [module-info mode load]} {
+    module unload tiff
+}
+
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/tiff/3/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/tiff/3/lib

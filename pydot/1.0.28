@@ -1,0 +1,8 @@
+#%Module 1.0
+
+if {[is-loaded pydot] && [module-info mode load]} {
+    module unload pydot
+}
+
+prepend-path    PYTHONPATH      /share/imagedb/perellm1/apps/pydot/1.0.28
+

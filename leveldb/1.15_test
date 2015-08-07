@@ -1,0 +1,11 @@
+#%Module 1.0
+
+if {[is-loaded leveldb] && [module-info mode load]} {
+    module unload leveldb
+}
+
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/leveldb/1.15_test/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/leveldb/1.15_test/lib
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/leveldb/1.15_test/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/leveldb/1.15_test/include
+

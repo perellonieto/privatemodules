@@ -1,0 +1,13 @@
+#%Module 1.0
+
+if {[is-loaded opencv] && [module-info mode load]} {
+    module unload opencv
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/opencv/static_2.4.9/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/opencv/static_2.4.9/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/opencv/static_2.4.9/lib
+prepend-path    PYTHONPATH      /share/imagedb/perellm1/apps/opencv/static_2.4.9/lib/python2.7/site-packages
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/opencv/static_2.4.9/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/opencv/static_2.4.9/include
+

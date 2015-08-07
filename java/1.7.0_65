@@ -1,0 +1,9 @@
+#%Module 1.0
+
+if {[is-loaded java] && [module-info mode load]} {
+    module unload java
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/java/1.7.0_65/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/java/1.7.0_65/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/java/1.7.0_65/lib

@@ -1,0 +1,8 @@
+#%Module 1.0
+
+if {[is-loaded ctags] && [module-info mode load]} {
+    module unload ctags
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/ctags/5.8/bin
+

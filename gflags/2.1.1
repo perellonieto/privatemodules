@@ -1,0 +1,12 @@
+#%Module 1.0
+
+if {[is-loaded gflags] && [module-info mode load]} {
+    module unload gflags
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/gflags/2.1.1/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/gflags/2.1.1/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/gflags/2.1.1/lib
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/gflags/2.1.1/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/gflags/2.1.1/include
+

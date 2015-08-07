@@ -1,0 +1,8 @@
+#%Module 1.0
+
+if {[is-loaded ffmpeg] && [module-info mode load]} {
+    module unload ffmpeg
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/ffmpeg/2.4.2
+

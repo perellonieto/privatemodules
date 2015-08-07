@@ -1,0 +1,12 @@
+#%Module 1.0
+
+if {[is-loaded lmdb] && [module-info mode load]} {
+    module unload lmdb
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/lmdb/0.9.14/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/lmdb/0.9.14/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/lmdb/0.9.14/lib
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/lmdb/0.9.14/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/lmdb/0.9.14/include
+

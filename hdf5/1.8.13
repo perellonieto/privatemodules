@@ -1,0 +1,12 @@
+#%Module 1.0
+
+if {[is-loaded hdf5] && [module-info mode load]} {
+    module unload hdf5
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/hdf5/1.8.13/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/hdf5/1.8.13/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/hdf5/1.8.13/lib
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/hdf5/1.8.13/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/hdf5/1.8.13/include
+

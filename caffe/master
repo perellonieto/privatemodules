@@ -1,0 +1,13 @@
+#%Module 1.0
+
+if {[is-loaded caffe] && [module-info mode load]} {
+    module unload caffe
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/caffe/master/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/caffe/master/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/caffe/master/lib
+prepend-path    PYTHONPATH      /share/imagedb/perellm1/apps/caffe/master/python
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/caffe/master/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/caffe/master/include
+

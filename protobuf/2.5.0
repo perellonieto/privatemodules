@@ -1,0 +1,13 @@
+#%Module 1.0
+
+if {[is-loaded protobuf] && [module-info mode load]} {
+    module unload protobuf
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/protobuf/2.5.0/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/protobuf/2.5.0/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/protobuf/2.5.0/lib
+prepend-path    PYTHONPATH      /share/imagedb/perellm1/apps/protobuf/2.5.0/python
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/protobuf/2.5.0/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/protobuf/2.5.0/include
+

@@ -1,0 +1,12 @@
+#%Module 1.0
+
+if {[is-loaded cuda] && [module-info mode load]} {
+    module unload cuda
+}
+
+prepend-path	PATH            /share/apps/devel/cuda/6.0/bin
+prepend-path 	LD_LIBRARY_PATH /share/apps/devel/cuda/6.0/lib64
+prepend-path 	LIBRARY_PATH    /share/apps/devel/cuda/6.0/lib64
+prepend-path 	CPATH           /share/apps/devel/cuda/6.0/include
+prepend-path 	INCLUDE         /share/apps/devel/cuda/6.0/include
+

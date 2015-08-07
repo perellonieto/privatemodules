@@ -1,0 +1,12 @@
+#%Module 1.0
+
+if {[is-loaded  crfsuite] && [module-info mode load]} {
+    module unload crfsuite
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/crfsuite/0.12/bin
+prepend-path 	LD_LIBRARY_PATH /share/imagedb/perellm1/apps/crfsuite/0.12/lib
+prepend-path 	LIBRARY_PATH    /share/imagedb/perellm1/apps/crfsuite/0.12/lib
+prepend-path 	CPATH           /share/imagedb/perellm1/apps/crfsuite/0.12/include
+prepend-path 	INCLUDE         /share/imagedb/perellm1/apps/crfsuite/0.12/include
+

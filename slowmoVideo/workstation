@@ -1,0 +1,7 @@
+#%Module 1.0
+
+if {[is-loaded slowmoVideo] && [module-info mode load]} {
+    module unload slowmoVideo
+}
+
+prepend-path	PATH            /share/imagedb/perellm1/apps/slowmoVideo/workstation/bin
